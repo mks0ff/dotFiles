@@ -132,6 +132,16 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gco='git commit'
+alias gch='git checkout'
+alias grs='git reset'
+alias gpl='git pull'
+alias gps='git push'
+alias glo='git log --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
