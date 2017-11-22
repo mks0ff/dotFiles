@@ -8,6 +8,10 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+#export DOCKER_HOST=tcp://172.17.0.2:2375
+export NSS_SSL_CBC_RANDOM_IV=0
+export FILE_BEAT="/usr/share/filebeat"
+export METRIC_BEAT="/usr/share/metricbeat"
 export SUBLIME_HOME="$HOME/tools/sublime_text_3"
 export JAVA_HOME="$HOME/tools/java8"
 export IDEA_JDK="$JAVA_HOME"
@@ -22,8 +26,9 @@ export SQLPATH="$HOME/tools/sqlplus/instantclient/bin"
 export TNS_ADMIN="$HOME/tools/sqlplus/instantclient/bin"
 export MAVEN_HOME="$HOME/tools/maven"
 export ACTIVATOR="$HOME/tools/activator"
+export YARN="$HOME/.config/yarn/global/node_modules/.bin"
 export SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
-export PATH="$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$GRADLE_HOME/bin:$IDEA/bin:$JBOSS_HOME/bin:$LD_LIBRARY_PATH:$SQLPATH:$TNS_ADMIN:$ORACLE_HOME:$MAVEN_HOME/bin:$ACTIVATOR/bin:$SUBLIME_HOME"
+export PATH="$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$GRADLE_HOME/bin:$IDEA/bin:$JBOSS_HOME/bin:$LD_LIBRARY_PATH:$SQLPATH:$TNS_ADMIN:$ORACLE_HOME:$MAVEN_HOME/bin:$ACTIVATOR/bin:$SUBLIME_HOME:$FILE_BEAT/bin:$METRIC_BEAT/bin:$YARN"
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then

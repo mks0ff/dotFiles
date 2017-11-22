@@ -141,14 +141,19 @@ alias gco='git commit'
 alias gch='git checkout'
 alias grs='git reset'
 alias gpl='git pull'
+alias gfa='git fetch --all'
+alias grod='git rebase origin/develop'
 alias gps='git push'
 alias glo='git log --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
 alias emacs='emacs -nw'
-alias idea='idea.sh &> /dev/null &'
+alias robomongo='$HOME/tools/robomongo/bin/robomongo &> /dev/null &'
 alias sqldev='$SQLDEV/sqldeveloper.sh &> /dev/null &'
+alias soapui='$HOME/tools/soapui/bin/soapui.sh'
 alias idea='$IDEA/bin/idea.sh &> /dev/null &'
 alias chrome='/opt/google/chrome/google-chrome --enable-plugins "$*" &> /dev/null &'
+alias postman='$HOME/tools/Postman/Postman &> /dev/null &'
+alias visualvm='$HOME/tools/visualvm/bin/visualvm &> /dev/null &'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
