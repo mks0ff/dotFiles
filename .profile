@@ -26,9 +26,11 @@ export SQLPATH="$HOME/tools/sqlplus/instantclient/bin"
 export TNS_ADMIN="$HOME/tools/sqlplus/instantclient/bin"
 export MAVEN_HOME="$HOME/tools/maven"
 export ACTIVATOR="$HOME/tools/activator"
+export ETLAS="$HOME/tools/eta"
+export TERRAFORM="$HOME/tools/terraform"
 export YARN="$HOME/.config/yarn/global/node_modules/.bin"
 export SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
-export PATH="$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$GRADLE_HOME/bin:$IDEA/bin:$JBOSS_HOME/bin:$LD_LIBRARY_PATH:$SQLPATH:$TNS_ADMIN:$ORACLE_HOME:$MAVEN_HOME/bin:$ACTIVATOR/bin:$SUBLIME_HOME:$FILE_BEAT/bin:$METRIC_BEAT/bin:$YARN"
+export PATH="$PATH:$JAVA_HOME/bin:$ANT_HOME/bin:$GRADLE_HOME/bin:$IDEA/bin:$JBOSS_HOME/bin:$LD_LIBRARY_PATH:$SQLPATH:$TNS_ADMIN:$ORACLE_HOME:$MAVEN_HOME/bin:$ACTIVATOR/bin:$SUBLIME_HOME:$FILE_BEAT/bin:$METRIC_BEAT/bin:$YARN:$ETLAS:$TERRAFORM"
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
